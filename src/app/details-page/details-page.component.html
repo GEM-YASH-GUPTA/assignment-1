@@ -29,14 +29,106 @@
 
   <!-- CARDS -->
 
-  <div class="card mx-4 mt-4" style=" flex-direction: row; border-style: none;">
-    <img src="../../assets/vistara.jpg" style="width: 5%;height: 55px;" class="card-img-top mx-5 mt-4" alt="...">
-    <h5 class="text-muted " style="font-weight: 400;margin-top: 3%;" >{{flights[0].name}}</h5>    
+  <!-- Card-1 -->
+  <div class="card mx-4 mt-4 rounded shadow" style="height:15rem;">
+    <div >
+        <img src="../../assets/vistara.jpg" style="width: 4rem;height: 4rem;display: inline-block; " class="card-img-top mx-3 " alt="...">
+        <h4 class="text-muted " style="font-weight: 400;margin-top: 1.875rem; display:inline-flex; " >{{flights[0].name}}</h4>    
+    
+    </div >
     <div class="card-body">
+        <div >
+            <h6 style="display: inline-block;">DEL <small style="color: rgb(171, 165, 165);">New Delhi, India</small> </h6>
+            <h6 style="display: inline-block; margin-left: 29.1rem;">BOM <small style="color: rgb(171, 165, 165);">Mumbai, India</small> </h6>
+        </div>
+        <div style="margin-top: 0.188rem;" >
+            <h4 style="display: inline-block;">{{flights[0].departure}}</h4>
+            <h4 style="display: inline-block; margin-left: 14.1rem;">{{flights[0].flight_hours}}</h4>
+            <h4 style="display: inline-block;margin-left: 14.1rem;">{{flights[0].arrival}}</h4>
+            <h4 style="display: inline-block;margin-left: 14.1rem;">{{ flights[0].price | currency :'INR' :'symbol' : '1.0-0'}}</h4>
+            <!-- <h6 style="display: inline-block; margin-left: 450px;">BOM <small style="color: rgb(171, 165, 165);">Mumbai, India</small> </h6> -->
+            <button type="button" style= "background-color:rgb(235, 103, 52); color: white; font-size: 17px; margin-left: 5.625rem;" class="btn px-5 py-2  "> Book</button>
+        </div>
+
+        <div >
+            <h6 style="display: inline-block; margin-left: 48.7rem;"><small style="color: rgb(171, 165, 165);">No Cost EMI from </small>{{flights[0].emi | currency : 'INR' : 'symbol' : '1.0-0'}}</h6>
+        </div>
+
+       <div >
+            <p style="display: inline-block; color: grey;">Partially Refundable </p>
+            <p style="display: inline-block;color: rgb(81, 81, 220); margin-left: 57.25rem;">Flight Details<i class="bi bi-chevron-down"></i> </p>
+        </div>
+        
       <!-- <h2 class="card-title" style="margin-left: 110px;color: #264a9f; margin-top: 60px; font-size: 2rem; font-family: 'Poppins', sans-serif;">Become an Agent</h2> -->
       <!-- <p class="card-text" style="margin-left: 110px;margin-right: 40px; color: #264a9f; margin-top: 15px; font-size: 0.9em; font-family: 'Poppins', sans-serif; ">
         By becoming an Insurance Agent, you can contribute towards your family’s financial prosperity and also have the opportunity to impact other people’s lives positively.
       </p> -->
+    </div>
+  </div>
+
+<!-- Card -2 -->
+
+  <div class="card mx-4 mt-4 rounded shadow" style="height:15rem;">
+    <div >
+        <img src="../../assets/spicejet.png" style="width: 4rem;height: 4rem;display: inline-block; " class="card-img-top mx-3 " alt="...">
+        <h4 class="text-muted " style="font-weight: 400;margin-top: 1.875rem; display:inline-flex; " >{{flights[1].name}}</h4>    
+    
+    </div >
+    <div class="card-body">
+        <div >
+            <h6 style="display: inline-block;">DEL <small style="color: rgb(171, 165, 165);">New Delhi, India</small> </h6>
+            <h6 style="display: inline-block; margin-left: 29.1rem;">BOM <small style="color: rgb(171, 165, 165);">Mumbai, India</small> </h6>
+        </div>
+        <div style="margin-top: 0.188rem;" >
+            <h4 style="display: inline-block;">{{flights[1].departure}}</h4>
+            <h4 style="display: inline-block; margin-left: 14.1rem;">{{flights[1].flight_hours}}</h4>
+            <h4 style="display: inline-block;margin-left: 14.1rem;">{{flights[1].arrival}}</h4>
+            <h4 style="display: inline-block;margin-left: 14.1rem;">{{ flights[1].price | currency :'INR' :'symbol' : '1.0-0'}}</h4>
+            <button type="button" style= "background-color:rgb(235, 103, 52); color: white; font-size: 17px;margin-left: 5.625rem;" class="btn px-5 py-2   "> Book</button>
+        </div>
+
+        <div >
+            <h6 style="display: inline-block; margin-left: 49.875rem;"><small style="color: rgb(171, 165, 165);">No Cost EMI from </small>{{flights[1].emi | currency : 'INR' : 'symbol' : '1.0-0'}}</h6>
+        </div>
+
+       <div >
+            <p style="display: inline-block; color: grey;">Partially Refundable </p>
+            <p style="display: inline-block;color: rgb(81, 81, 220); margin-left: 57.25rem;">Flight Details<i class="bi bi-chevron-down"></i> </p>
+        </div>
+        
+    </div>
+  </div>
+
+  <!-- Card -3 -->
+
+  <div class="card mx-4 mt-4 rounded shadow" style="height:15rem;">
+    <div >
+        <img src="../../assets/spicejet.png" style="width: 4rem;height: 4rem;display: inline-block; " class="card-img-top mx-3 " alt="...">
+        <h4 class="text-muted " style="font-weight: 400;margin-top: 1.875rem; display:inline-flex; " >{{flights[1].name}}</h4>    
+    
+    </div >
+    <div class="card-body">
+        <div >
+            <h6 style="display: inline-block;">DEL <small style="color: rgb(171, 165, 165);">New Delhi, India</small> </h6>
+            <h6 style="display: inline-block; margin-left: 29.1rem;">BOM <small style="color: rgb(171, 165, 165);">Mumbai, India</small> </h6>
+        </div>
+        <div style="margin-top: 0.188rem;" >
+            <h4 style="display: inline-block;">{{flights[1].departure}}</h4>
+            <h4 style="display: inline-block; margin-left: 14.1rem;">{{flights[1].flight_hours}}</h4>
+            <h4 style="display: inline-block;margin-left: 14.1rem;">{{flights[1].arrival}}</h4>
+            <h4 style="display: inline-block;margin-left: 14.1rem;">{{ flights[1].price | currency :'INR' :'symbol' : '1.0-0'}}</h4>
+            <button type="button" style= "background-color:rgb(235, 103, 52); color: white; font-size: 17px;margin-left: 5.625rem   ;" class="btn px-5 py-2   "> Book</button>
+        </div>
+
+        <div >
+            <h6 style="display: inline-block; margin-left: 49.875rem;"><small style="color: rgb(171, 165, 165);">No Cost EMI from </small>{{flights[1].emi | currency : 'INR' : 'symbol' : '1.0-0'}}</h6>
+        </div>
+
+       <div >
+            <p style="display: inline-block; color: grey;">Partially Refundable </p>
+            <p style="display: inline-block;color: rgb(81, 81, 220); margin-left: 57.25rem;">Flight Details<i class="bi bi-chevron-down"></i> </p>
+        </div>
+        
     </div>
   </div>
 
