@@ -9,7 +9,7 @@ import {FlightServiceService} from '../flight-service.service'
 export class DetailsPageComponent implements OnInit {
 
   // getting data from local json
-  public flights  =[ {
+  public flights  =[{
     id: "",
     name: "",
     departure: "",
@@ -18,6 +18,7 @@ export class DetailsPageComponent implements OnInit {
     price: "",
     emi :""
   }]
+  // console.log(flights);
   
   constructor(private ele : FlightServiceService) { }
 
@@ -29,6 +30,6 @@ export class DetailsPageComponent implements OnInit {
     })
   }
 
-  
+
 
 }

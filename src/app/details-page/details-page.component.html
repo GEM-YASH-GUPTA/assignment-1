@@ -1,5 +1,5 @@
 <p>details-page works!</p>
-<div style="text-align:center">
+<!-- <div style="text-align:center">
     <h2>
         Country list from local json file...
     </h2>
@@ -9,5 +9,35 @@
        </li>
     </ul>
 </div>
-<h1>{{flights[1]}}</h1>
+<h1>{{flights[1]}}</h1> -->
+
+<!-- SORT BAR -->
+<ul class="nav nav-pills bg-light p-1 justify-content-around mx-4 rounded">
+    <li class="nav-item">
+      <button type="button"  class="nav-link text-dark " tabindex="-1">DEPARTURE</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="nav-link text-dark "  tabindex="-1" >DURATION</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="nav-link  text-dark  "  tabindex="-1" >ARRIVAL</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="nav-link"  tabindex="-1" >PRICE<i class="bi bi-arrow-up" style="font-size: 18px;"></i></button>
+    </li>
+  </ul>
+
+  <!-- CARDS -->
+
+  <div class="card mx-4 mt-4" style=" flex-direction: row; border-style: none;">
+    <img src="../../assets/vistara.jpg" style="width: 5%;height: 55px;" class="card-img-top mx-5 mt-4" alt="...">
+    <h5 class="text-muted " style="font-weight: 400;margin-top: 3%;" >{{flights[0].name}}</h5>    
+    <div class="card-body">
+      <!-- <h2 class="card-title" style="margin-left: 110px;color: #264a9f; margin-top: 60px; font-size: 2rem; font-family: 'Poppins', sans-serif;">Become an Agent</h2> -->
+      <!-- <p class="card-text" style="margin-left: 110px;margin-right: 40px; color: #264a9f; margin-top: 15px; font-size: 0.9em; font-family: 'Poppins', sans-serif; ">
+        By becoming an Insurance Agent, you can contribute towards your family’s financial prosperity and also have the opportunity to impact other people’s lives positively.
+      </p> -->
+    </div>
+  </div>
+
 
