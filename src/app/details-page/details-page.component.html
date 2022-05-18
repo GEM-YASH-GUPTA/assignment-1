@@ -1,0 +1,13 @@
+<p>details-page works!</p>
+<div style="text-align:center">
+    <h2>
+        Country list from local json file...
+    </h2>
+    <ul *ngFor="let item of flights">
+       <li>
+          <h3>id : {{item.id}} , name : {{item.name}} , arrival : {{item.arrival}}</h3>
+       </li>
+    </ul>
+</div>
+<h1>{{flights[1]}}</h1>
+
