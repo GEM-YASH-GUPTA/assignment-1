@@ -7,7 +7,7 @@ import {FlightServiceService} from '../flight-service.service'
   styleUrls: ['./details-page.component.css']
 })
 export class DetailsPageComponent implements OnInit {
-
+  
   // getting data from local json
   public flights  =[{
     id: "",
@@ -26,7 +26,7 @@ export class DetailsPageComponent implements OnInit {
     this.ele.getJSON().subscribe(res => {
       // console.log(res.type)
       this.flights = res
-      console.log(this.flights) 
+      // console.log(this.flights) 
     })
   }
 

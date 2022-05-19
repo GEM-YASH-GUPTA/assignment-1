@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment-1';
+
+  show=true
+  submitdata(form : any){
+    this.show=false;
+    console.log(form)
+  }
 }
