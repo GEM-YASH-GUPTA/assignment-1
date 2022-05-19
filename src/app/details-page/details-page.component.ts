@@ -20,6 +20,7 @@ export class DetailsPageComponent implements OnInit {
   }]
   // console.log(flights);
   
+  
   constructor(private ele : FlightServiceService) { }
 
   ngOnInit() {

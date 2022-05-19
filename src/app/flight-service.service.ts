@@ -7,12 +7,14 @@ import {Observable}  from 'rxjs'
 })
 export class FlightServiceService {
 
+  public getJSON() : Observable<any> {
+    return this.data.get("./assets/data.json");
+  }
+  
   constructor(private data : HttpClient) { 
      this.getJSON().subscribe((data: any)=> {
       // console.log(data);
     })
   }
-  public getJSON() : Observable<any> {
-    return this.data.get("./assets/data.json");
-  }
+  
 }

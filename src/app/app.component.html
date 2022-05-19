@@ -21,7 +21,10 @@ min-height:60vh;">
     </form> 
 </div> -->
 
-<div class="rounded p-3" *ngIf="show" style="position: absolute;top:180px; left: 480px; width: 300px; background-color: white;height: 250px; ">
+<!-- <div class="rounded p-3" *ngIf="show" style="position: absolute;top:180px; left: 500px; width: 300px; background-color: white;height: 270px; ">
+  <h3 style="text-align: center;">
+    Sign In
+  </h3>
     <form #userForm="ngForm" (ngSubmit)="submitdata(userForm.value)">
         <div style="margin-top: 40px;">
             <div class="form-group row">
@@ -46,21 +49,14 @@ min-height:60vh;">
        
       </form>
 </div>
+<router-outlet></router-outlet> -->
+
+
+
+<!-- 
+{{exampleparent}}
+<app-sign-in (exampleOutput) = "examplemethodparent($event)"  ></app-sign-in> -->
+
+
 <router-outlet></router-outlet>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

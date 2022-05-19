@@ -1,0 +1,29 @@
+<div class="rounded p-3" *ngIf="exampleChild" style="position: absolute;top:180px; left: 500px; width: 300px; background-color: white;height: 270px; ">
+    <h3 style="text-align: center;">
+      Sign In
+    </h3>
+      <form #userForm="ngForm" (ngSubmit)="submitdata(userForm.value)">
+          <div style="margin-top: 40px;">
+              <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+                  <div class="col-sm-8">
+                    <input type="email" ngModel name="username" class="form-control mx-5" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label mt-4">Password:</label>
+                  <div class="col-sm-8">
+                    <input type="password" ngModel name="password" class="form-control mx-5 mt-4" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                
+                <div class="form-group row">
+                  <div class="col-sm-10 mt-4">
+                    <button routerLink="details-page" type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                </div>
+          </div>
+         
+        </form>
+  </div>
+  <router-outlet></router-outlet>
