@@ -2,16 +2,16 @@
 <!-- SORT BAR -->
 <ul class="nav nav-pills bg-light p-1 justify-content-around mx-4 rounded">
     <li class="nav-item">
-      <button type="button"  class="nav-link  " [ngClass]="{'green' : toggle4, 'red': !toggle4}" tabindex="-1" (click)="sortByDeparture()" >DEPARTURE</button>
+      <button type="button"  class="nav-link  " [ngClass]="{'blue' : toggle4, 'black': !toggle4}" tabindex="-1" (click)="sortByDeparture()" >DEPARTURE</button>
     </li>
     <li class="nav-item">
-      <button type="button" class="nav-link  " [ngClass]="{'green' : toggle2, 'red': !toggle2}"  tabindex="-1" (click)="sortByDuration()">DURATION</button>
+      <button type="button" class="nav-link  " [ngClass]="{'blue' : toggle2, 'black': !toggle2}"  tabindex="-1" (click)="sortByDuration()">DURATION</button>
     </li>
     <li class="nav-item">
-      <button type="button" class="nav-link   "  [ngClass]="{'green' : toggle3, 'red': !toggle3}" tabindex="-1" (click)="sortByArrival()">ARRIVAL</button>
+      <button type="button" class="nav-link   "  [ngClass]="{'blue' : toggle3, 'black': !toggle3}" tabindex="-1" (click)="sortByArrival()">ARRIVAL</button>
     </li>
     <li class="nav-item">
-      <button type="button" class="nav-link  " [ngClass]="{'green' : toggle1, 'red': !toggle1}"  tabindex="-1" (click)="sortByPrice()">PRICE<i class="bi bi-arrow-up" style="font-size: 18px;"></i></button>
+      <button type="button" class="nav-link  " [ngClass]="{'blue' : toggle1, 'black': !toggle1}"  tabindex="-1" (click)="sortByPrice()">PRICE<i class="bi bi-arrow-up" style="font-size: 18px;"></i></button>
     </li>
   </ul>
 

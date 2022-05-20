@@ -14,23 +14,18 @@ export class SignInComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  // var = new AppComponent
-  // var2= this.var.showSignIn
 
-//  @Output() exampleOutput = new EventEmitter<boolean>();
-
-  exampleChild : boolean=true
-  isVerified = false;
+  isVerified = false; 
   submitdata(form : any){
+    console.log(form.value.password)
+    if( form.valid && form.value.username == 'admin' && form.value.password == 'Admin@123' ){
+      
+      this.isVerified = true;
+    }
+    else{
+      alert("Please enter correct details")
+    }
     
-    // this.exampleChild=false;
-    this.isVerified = true;
-    console.log(form)
-    // this.exampleOutput.emit(this.exampleChild)
-    
-
-    // this.example.emit(this.show)
-    // this.var2=false;
   }
 
 }
