@@ -2,25 +2,27 @@
 <!-- SORT BAR -->
 <ul class="nav nav-pills bg-light p-1 justify-content-around mx-4 rounded">
     <li class="nav-item">
-      <button type="button"  class="nav-link text-dark " tabindex="-1">DEPARTURE</button>
+      <button type="button"  class="nav-link  " [ngClass]="{'green' : toggle4, 'red': !toggle4}" tabindex="-1" (click)="sortByDeparture()" >DEPARTURE</button>
     </li>
     <li class="nav-item">
-      <button type="button" class="nav-link text-dark "  tabindex="-1" >DURATION</button>
+      <button type="button" class="nav-link  " [ngClass]="{'green' : toggle2, 'red': !toggle2}"  tabindex="-1" (click)="sortByDuration()">DURATION</button>
     </li>
     <li class="nav-item">
-      <button type="button" class="nav-link  text-dark  "  tabindex="-1" >ARRIVAL</button>
+      <button type="button" class="nav-link   "  [ngClass]="{'green' : toggle3, 'red': !toggle3}" tabindex="-1" (click)="sortByArrival()">ARRIVAL</button>
     </li>
     <li class="nav-item">
-      <button type="button" class="nav-link"  tabindex="-1" >PRICE<i class="bi bi-arrow-up" style="font-size: 18px;"></i></button>
+      <button type="button" class="nav-link  " [ngClass]="{'green' : toggle1, 'red': !toggle1}"  tabindex="-1" (click)="sortByPrice()">PRICE<i class="bi bi-arrow-up" style="font-size: 18px;"></i></button>
     </li>
   </ul>
 
   <!-- CARDS -->
 
+
+
   <!-- Card -1 -->
   <div class="card mx-4 mt-4 rounded shadow" style="height:15rem;">
     <div >
-        <img src="../../assets/vistara.jpg" style="width: 4rem;height: 4rem;display: inline-block; " class="card-img-top mx-3 " alt="...">
+        <img src="{{flights[0].image}}" style="width: 4rem;height: 4rem;display: inline-block; " class="card-img-top mx-3 " alt="...">
         <h4 class="text-muted "  style="font-weight: 400;margin-top: 1.875rem; display:inline-flex; " >{{flights[0].name}}</h4>    
     
     </div >
@@ -48,44 +50,46 @@
     </div>
   </div>
 
+
+    
 <!-- Card -2 -->
 
-  <div class="card mx-4 mt-4 rounded shadow" style="height:15rem;">
-    <div >
-        <img src="../../assets/spicejet.png" style="width: 4rem;height: 4rem;display: inline-block; " class="card-img-top mx-3 " alt="...">
-        <h4 class="text-muted "  style="font-weight: 400;margin-top: 1.875rem; display:inline-flex; " >{{flights[1].name}}</h4>    
-    
-    </div >
-    <div class="card-body">
-        <div >
-            <h6 style="display: inline-block;">DEL <small style="color: rgb(171, 165, 165);">New Delhi, India</small> </h6>
-            <h6 style="display: inline-block; margin-left: 28.2rem;">BOM <small style="color: rgb(171, 165, 165);">Mumbai, India</small> </h6>
-        </div>
-        <div style="margin-top: 0.188rem;" >
-            <h4 style="display: inline-block;">{{flights[1].departure}}</h4>
-            <h4 style="display: inline-block; margin-left: 14.1rem;">{{flights[1].flight_hours}}</h4>
-            <h4 style="display: inline-block;margin-left: 14.1rem;">{{flights[1].arrival}}</h4>
-            <h4 style="display: inline-block;margin-left: 14.1rem;">{{ flights[1].price | currency :'INR' :'symbol' : '1.0-0'}}</h4>
-            <button type="button" style= "background-color:rgb(235, 103, 52); color: white; font-size: 17px;margin-left: 5.625rem;" class="btn px-5 py-2   "> Book</button>
-        </div>
+<div class="card mx-4 mt-4 rounded shadow" style="height:15rem;">
+  <div >
+      <img src="{{flights[1].image}}" style="width: 4rem;height: 4rem;display: inline-block; " class="card-img-top mx-3 " alt="...">
+      <h4 class="text-muted "  style="font-weight: 400;margin-top: 1.875rem; display:inline-flex; " >{{flights[1].name}}</h4>    
+  
+  </div >
+  <div class="card-body">
+      <div >
+          <h6 style="display: inline-block;">DEL <small style="color: rgb(171, 165, 165);">New Delhi, India</small> </h6>
+          <h6 style="display: inline-block; margin-left: 28.2rem;">BOM <small style="color: rgb(171, 165, 165);">Mumbai, India</small> </h6>
+      </div>
+      <div style="margin-top: 0.188rem;" >
+          <h4 style="display: inline-block;">{{flights[1].departure}}</h4>
+          <h4 style="display: inline-block; margin-left: 14.1rem;">{{flights[1].flight_hours}}</h4>
+          <h4 style="display: inline-block;margin-left: 14.1rem;">{{flights[1].arrival}}</h4>
+          <h4 style="display: inline-block;margin-left: 14.1rem;">{{ flights[1].price | currency :'INR' :'symbol' : '1.0-0'}}</h4>
+          <button type="button" style= "background-color:rgb(235, 103, 52); color: white; font-size: 17px;margin-left: 5.625rem;" class="btn px-5 py-2   "> Book</button>
+      </div>
 
-        <div >
-            <h6 style="display: inline-block; margin-left: 48.4rem;"><small style="color: rgb(171, 165, 165);">No Cost EMI from </small>{{flights[1].emi | currency : 'INR' : 'symbol' : '1.0-0'}}</h6>
-        </div>
+      <div >
+          <h6 style="display: inline-block; margin-left: 48.4rem;"><small style="color: rgb(171, 165, 165);">No Cost EMI from </small>{{flights[1].emi | currency : 'INR' : 'symbol' : '1.0-0'}}</h6>
+      </div>
 
-       <div >
-            <p style="display: inline-block; color: grey;">Partially Refundable </p>
-            <p style="display: inline-block;color: rgb(81, 81, 220); margin-left: 57.25rem;">Flight Details<i class="bi bi-chevron-down"></i> </p>
-        </div>
-        
-    </div>
+     <div >
+          <p style="display: inline-block; color: grey;">Partially Refundable </p>
+          <p style="display: inline-block;color: rgb(81, 81, 220); margin-left: 57.25rem;">Flight Details<i class="bi bi-chevron-down"></i> </p>
+      </div>
+      
   </div>
+</div>
 
   <!-- Card -3 -->
 
   <div class="card mx-4 mt-4 rounded shadow" style="height:15rem;">
     <div >
-        <img src="../../assets/spicejet.png" style="width: 4rem;height: 4rem;display: inline-block; " class="card-img-top mx-3 " alt="...">
+        <img src="{{flights[2].image}}" style="width: 4rem;height: 4rem;display: inline-block; " class="card-img-top mx-3 " alt="...">
         <h4 class="text-muted " style="font-weight: 400;margin-top: 1.875rem; display:inline-flex; " >{{flights[2].name}}</h4>    
     
     </div >
@@ -95,7 +99,7 @@
             <h6 style="display: inline-block; margin-left: 28.3rem;">BOM <small style="color: rgb(171, 165, 165);">Mumbai, India</small> </h6>
         </div>
         <div style="margin-top: 0.188rem;" >
-            <h4 style="display: inline-block;">{{flights[1].departure}}</h4>
+            <h4 style="display: inline-block;">{{flights[2].departure}}</h4>
             <h4 style="display: inline-block; margin-left: 14.1rem;">{{flights[2].flight_hours}}</h4>
             <h4 style="display: inline-block;margin-left: 14.1rem;">{{flights[2].arrival}}</h4>
             <h4 style="display: inline-block;margin-left: 14.1rem;">{{ flights[2].price | currency :'INR' :'symbol' : '1.0-0'}}</h4>

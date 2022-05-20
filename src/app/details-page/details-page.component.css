@@ -21,3 +21,11 @@ html {
       font-size: 1.6rem;
     }
   }
+
+  .green {
+    color: green;
+}
+
+.red {
+    color: red;
+}

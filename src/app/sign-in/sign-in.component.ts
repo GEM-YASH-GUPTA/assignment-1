@@ -1,4 +1,5 @@
 import { Component, OnInit, Output , EventEmitter } from '@angular/core';
+import {NgForm} from '@angular/forms'
 // import { EventEmitter } from 'stream';
 // import {AppComponent} from '../app.component'
 
@@ -19,10 +20,11 @@ export class SignInComponent implements OnInit {
 //  @Output() exampleOutput = new EventEmitter<boolean>();
 
   exampleChild : boolean=true
-
+  isVerified = false;
   submitdata(form : any){
     
-    this.exampleChild=false;
+    // this.exampleChild=false;
+    this.isVerified = true;
     console.log(form)
     // this.exampleOutput.emit(this.exampleChild)
     

@@ -1,7 +1,19 @@
 [
     {
         "id" :1 ,
+        "name" : "Spicejet" ,
+        "image" : "assets/spicejet.png",
+        "departure" : "18:35" ,
+        "arrival" : "20:50",  
+        "flight_hours" : "2h 15m",
+        "price" : 7776,
+        "emi" : 2592
+       
+    },
+    {
+        "id" :2 ,
         "name" : "Vistara" ,
+        "image" : "assets/vistara.jpg",
         "departure" : "17:45" ,
         "arrival" : "20:05",  
         "flight_hours" : "2h 20m",
@@ -9,17 +21,9 @@
         "emi" : 2085
     },
     {
-        "id" :2 ,
-        "name" : "Spicejet" ,
-        "departure" : "18:35" ,
-        "arrival" : "20:50",  
-        "flight_hours" : "2h 15m",
-        "price" : 7776,
-        "emi" : 2592
-    },
-    {
         "id" :3 ,
         "name" : "Spicejet" ,
+        "image" : "assets/spicejet.png",
         "departure" : "19:45" , 
         "arrival" : "22:05", 
         "flight_hours" : "2h 20m",

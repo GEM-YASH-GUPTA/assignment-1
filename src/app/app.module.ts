@@ -7,13 +7,14 @@ import { DetailsPageComponent } from './details-page/details-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
-import { SignInComponent } from './sign-in/sign-in.component'
+import { SignInComponent } from './sign-in/sign-in.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DetailsPageComponent,
-    SignInComponent
+    SignInComponent,
   ],
   imports: [
     BrowserModule,
