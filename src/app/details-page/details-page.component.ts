@@ -114,4 +114,8 @@ status = 'Enable';
       })
     }
   }
+
+  test(){
+    console.log("clicked")
+  }
 }

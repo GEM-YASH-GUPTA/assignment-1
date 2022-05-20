@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { BookingPage1Component } from './booking-page1/booking-page1.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
     AppComponent,
     DetailsPageComponent,
     SignInComponent,
+    BookingPage1Component,
   ],
   imports: [
     BrowserModule,
