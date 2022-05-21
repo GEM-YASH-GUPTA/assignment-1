@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {FlightServiceService} from '../flight-service.service'
 
+
 @Component({
-  selector: 'app-booking-page1',
-  templateUrl: './booking-page1.component.html',
-  styleUrls: ['./booking-page1.component.css']
+  selector: 'app-booking-page3',
+  templateUrl: './booking-page3.component.html',
+  styleUrls: ['./booking-page3.component.css']
 })
-export class BookingPage1Component implements OnInit {
+export class BookingPage3Component implements OnInit {
 
   public flights  =[{
     id: "",
@@ -30,5 +31,6 @@ export class BookingPage1Component implements OnInit {
       // console.log(this.flights) 
     })
   }
+
 
 }

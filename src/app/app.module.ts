@@ -9,6 +9,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { BookingPage1Component } from './booking-page1/booking-page1.component';
+import { BookingPage2Component } from './booking-page2/booking-page2.component';
+import { BookingPage3Component } from './booking-page3/booking-page3.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { BookingPage1Component } from './booking-page1/booking-page1.component';
     DetailsPageComponent,
     SignInComponent,
     BookingPage1Component,
+    BookingPage2Component,
+    BookingPage3Component,
   ],
   imports: [
     BrowserModule,
