@@ -19,16 +19,13 @@ export class BookingPage2Component implements OnInit {
     price: "",
     emi :""
   }]
-  // console.log(flights);
-  
+
   
   constructor(private ele : FlightServiceService) { }
 
   ngOnInit() {
     this.ele.getJSON().subscribe(res => {
-      // console.log(res.type)
       this.flights = res
-      // console.log(this.flights) 
     })
   }
 

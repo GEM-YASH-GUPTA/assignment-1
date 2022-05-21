@@ -1,7 +1,5 @@
 import { Component, OnInit, Output , EventEmitter } from '@angular/core';
 import {NgForm} from '@angular/forms'
-// import { EventEmitter } from 'stream';
-// import {AppComponent} from '../app.component'
 
 @Component({
   selector: 'app-sign-in',

@@ -19,16 +19,12 @@ export class DetailsPageComponent implements OnInit {
     price: "",
     emi :""
   }]
-  // console.log(flights);
-  
   
   constructor(private ele : FlightServiceService) { }
 
   ngOnInit() {
     this.ele.getJSON().subscribe(res => {
-      // console.log(res.type)
       this.flights = res
-      // console.log(this.flights) 
     })
   }
 
@@ -50,10 +46,8 @@ status = 'Enable';
     }
     else{
       this.ele.getJSON().subscribe(res => {
-        // console.log(res.type)
         this.flights = res
         this.toggle1 = false;
-        // console.log(this.flights) 
       })
     }
     
@@ -70,10 +64,8 @@ status = 'Enable';
     }
     else{
       this.ele.getJSON().subscribe(res => {
-        // console.log(res.type)
         this.flights = res
         this.toggle2 = false;
-        // console.log(this.flights) 
       })
     }
   }
@@ -88,10 +80,8 @@ status = 'Enable';
     }
     else{
       this.ele.getJSON().subscribe(res => {
-        // console.log(res.type)
         this.flights = res
         this.toggle3 = false;
-        // console.log(this.flights) 
       })
     }
     
@@ -107,15 +97,10 @@ status = 'Enable';
     }
     else{
       this.ele.getJSON().subscribe(res => {
-        // console.log(res.type)
         this.flights = res
         this.toggle4 = false;
-        // console.log(this.flights) 
       })
     }
   }
 
-  test(){
-    console.log("clicked")
-  }
 }
