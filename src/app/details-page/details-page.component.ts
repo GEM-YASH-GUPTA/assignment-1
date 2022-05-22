@@ -32,7 +32,7 @@ export class DetailsPageComponent implements OnInit {
   toggle2 = false;
   toggle3 = false;
   toggle4 = false;
-status = 'Enable'; 
+  status = 'Enable'; 
 
 
   issorted = true;
@@ -42,7 +42,6 @@ status = 'Enable';
       console.log(this.flights)
     
       this.toggle1 = true;
-      this.status = this.toggle1 ? 'Enable' : 'Disable';
     }
     else{
       this.ele.getJSON().subscribe(res => {
@@ -60,7 +59,6 @@ status = 'Enable';
       console.log(this.flights)
     
       this.toggle2 = true;
-      this.status = this.toggle2 ? 'Enable' : 'Disable';
     }
     else{
       this.ele.getJSON().subscribe(res => {
@@ -76,7 +74,6 @@ status = 'Enable';
       console.log(this.flights)
     
       this.toggle3 = true;
-      this.status = this.toggle3 ? 'Enable' : 'Disable';
     }
     else{
       this.ele.getJSON().subscribe(res => {
@@ -93,7 +90,6 @@ status = 'Enable';
       console.log(this.flights)
     
       this.toggle4= true;
-      this.status = this.toggle4 ? 'Enable' : 'Disable';
     }
     else{
       this.ele.getJSON().subscribe(res => {

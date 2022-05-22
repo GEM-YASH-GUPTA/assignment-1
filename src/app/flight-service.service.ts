@@ -13,6 +13,7 @@ export class FlightServiceService {
   
   constructor(private data : HttpClient) { 
      this.getJSON().subscribe((data: any)=> {
+      // console.log(data);
     })
   }
   
